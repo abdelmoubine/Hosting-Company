@@ -1,0 +1,102 @@
+*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{font-family:Arial, Helvetica, sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+article,aside,footer,header,nav,section,main{display:block}
+body::-webkit-scrollbar{background-color:#ffffff;width:10px}
+body::-webkit-scrollbar-thumb{background:#0081fa}
+body::-moz-selection{background:#0081fa;color:#FFF}
+::-moz-selection{background:#0081fa;color:#FFF}
+::selection{background:#0081fa;color:#FFF}
+ul {list-style: none;padding: 0;margin: 0;}
+a{text-decoration:none;color:inherit}
+
+.My-container{
+    margin:0 auto;
+    background-color:#ffffff;
+    -webkit-box-shadow:0 4px 8px 0 #00000033,0 6px 20px 0 #00000030;
+    -moz-box-shadow:0 4px 8px 0 #00000033,0 6px 20px 0 #00000030;
+    box-shadow:0 4px 8px 0 #00000033,0 6px 20px 0 #00000030;
+}
+
+.My-container:before,.My-container:after{
+    content:'';
+    display:block;
+    height:3px;
+    background:-webkit-linear-gradient(to right,#0081fa,#02e2f0);
+    background:-o-linear-gradient(to right,#0081fa,#02e2f0);
+    background:-moz-linear-gradient(to right,#0081fa,#02e2f0);
+    background:linear-gradient(to right,#0081fa,#02e2f0)
+}
+
+.nav li a:hover, .nav li.selected a {
+    color: #ffffff!important;
+    background: -webkit-linear-gradient(to right,#0081fa,#02e2f0);
+    background: -o-linear-gradient(to right,#0081fa,#02e2f0);
+    background: -moz-linear-gradient(to right,#0081fa,#02e2f0);
+    background: linear-gradient(to right,#0081fa,#02e2f0);
+    border-radius: 6px;
+}
+
+.floating {
+    animation: floating 3s ease infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: floating;
+    will-change: transform;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.floating:hover {
+    animation-play-state: paused;
+}
+
+#footer {
+    position:relative;
+    clear:both
+}
+
+/* ------ Social Colors ------ */
+#social-footer .social-static {margin-top: 5px;white-space: nowrap;overflow-x: hidden; overflow-y: hidden;}
+.social{font-size:0}
+.social li{display:inline-block;margin:0 2px}
+.social li i{color:#FFF;width:28px;height:28px;line-height:28px;margin-bottom:5px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;display:inline-block;text-align:center;font-size:16px}
+
+.social .bi-facebook{background-color:#3b5998}
+.social .bi-twitter{background-color:#1da1f2}
+.social .bi-rss{background-color:#f26522}
+.social .bi-pinterest{background-color:#cc2127}
+.social .bi-linkedin{background-color:#0976b4}
+.social .bi-github{background-color:#000000}
+.social .bi-youtube{background-color:#e52d27}
+.social .bi-instagram{background-color:#7c38af;background:radial-gradient(circle at 0 130%, 
+    #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.social .bi-telegram{background-color:#32AEE1}
+.social .bi-messenger{background-color:#0084ff}
+.social .bi-paypal{background-color:#193685}
+
+.social-static li:hover{-webkit-animation:abdelmoubineSocialMedia .2s ease-in-out;-moz-animation:abdelmoubineSocialMedia .2s ease-in-out;-o-animation:abdelmoubineSocialMedia .2s ease-in-out;animation:abdelmoubineSocialMedia .2s ease-in-out}
+@-webkit-keyframes abdelmoubineSocialMedia{
+50%{-webkit-transform:scale(0.7);transform:scale(0.7)}
+100%{-webkit-transform:scale(1.5);transform:cale(1.5)}
+}
+@-moz-keyframes abdelmoubineSocialMedia{
+50%{-webkit-transform:scale(0.7);-moz-transform:scale(0.7);transform:scale(0.7)}
+100%{-webkit-transform:scale(1.5);-moz-transform:cale(1.5);transform:cale(1.5)}
+}
+@-o-keyframes abdelmoubineSocialMedia{
+50%{-webkit-transform:scale(0.7);-o-transform:scale(0.7);transform:scale(0.7)}
+100%{-webkit-transform:scale(1.5);-o-transform:cale(1.5);transform:cale(1.5)}
+}
+@keyframes abdelmoubineSocialMedia{
+50%{-webkit-transform:scale(0.7);-moz-transform:scale(0.7);-o-transform:scale(0.7);transform:scale(0.7)}
+100%{-webkit-transform:scale(1.5);-moz-transform:cale(1.5);-o-transform:cale(1.5);transform:cale(1.5)}
+}
